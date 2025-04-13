@@ -1,0 +1,40 @@
+site_name: nopAccelerate Plus Pro Docs
+site_url: https://yourusername.github.io/nopaccelerate-docs/
+theme:
+  name: material
+  logo: 'images/logo.png'
+  custom_dir: overrides
+  features:
+    - navigation.footer
+extra:
+  favicon: 'images/logo.ico'
+nav:
+  - Introduction: index.md
+  - Version History:
+      - All Versions: version-history/index.md
+      - 0.4.0: version-history/0.4.0.md
+  - Support Document:
+      - Installation: installation/nopaccelerate-installation.md
+      - JAVA Setup: java-setup.md
+      - SOLR Setup:
+          - What is Solr: solr-setup/what-is-solr.md
+          - Start/Stop/Restart: solr-setup/start-stop-restart.md
+          - Creating a New Core: solr-setup/creating-core.md
+          - Delete Core: solr-setup/delete-core.md
+          - Reload Core: solr-setup/reload-core.md
+          - Delete Indexed Data: solr-setup/delete-indexed-data.md
+          - Start on System Startup: solr-setup/startup-setup.md
+  - Technical FAQs:
+      - Indexing Error (DIH): technical-faqs/indexing-error.md
+      - Solr on Shared Server: technical-faqs/shared-server-core.md
+      - Connecting to Solr: technical-faqs/connect-to-solr.md
+      - Plugin Timeout Error: technical-faqs/timeout-error.md
+      - Navigation Not Working: technical-faqs/navigation-error.md
+      - Synonyms Search: technical-faqs/synonyms-search.md
+      - Facet % Filter Issue: technical-faqs/facet-percent-error.md
+      - Solr as Service (Windows): technical-faqs/solr-service-windows.md
+      - Licensing Issues: technical-faqs/licensing-issues.md
+      - Responsive Filter w/ nopTemplate: technical-faqs/responsive-filter-issue.md
+      - Chrome Font Error: technical-faqs/chrome-font-error.md
+      - StartIndexing WebRequest: technical-faqs/startindexing-webrequest.md
+  - How to get Help: getting-help.md
