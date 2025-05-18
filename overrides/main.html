@@ -1,0 +1,108 @@
+<!-- overrides/index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .homepage-banner {
+        background: #00aaff;
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .homepage-banner h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .homepage-banner p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .homepage-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+    }
+
+    .homepage-card {
+        background: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+        text-align: center;
+    }
+
+    .homepage-card h3 {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .homepage-section-title {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem;
+    }
+</style>
+
+<div class="homepage-banner">
+    <h1>Documentation</h1>
+    <p>Help documents for nopAccelerate plugins and other software products</p>
+</div>
+
+<div class="homepage-cards">
+    <div class="homepage-card">
+        <a href="https://shop.nopaccelerate.com/" target="_blank">
+            <img src="images/forum-icon.png" alt="Community Forum" width="60" />
+            <h3>Community Forum</h3>
+        </a>
+    </div>
+
+    <div class="homepage-card">
+        <a href="/documentation/">
+            <img src="images/docs-icon.png" alt="Documentation" width="60" />
+            <h3>Documentation</h3>
+        </a>
+    </div>
+
+    <div class="homepage-card">
+        <a href="https://www.nopaccelerate.com/wiki/support/">
+            <img src="images/support-icon.png" alt="24/7 Support" width="60" />
+            <h3>24/7 Support</h3>
+        </a>
+    </div>
+</div>
+
+<h2 class="homepage-section-title">Explore Topics</h2>
+<div class="homepage-cards">
+    <div class="homepage-card">
+        <h3>Knowledge Base</h3>
+        <p>Professionally cultivate one-to-one find customer service with robust ideas.</p>
+        <a href="getting-help.md">Go to help page →</a>
+    </div>
+    <div class="homepage-card">
+        <h3>Live Chat</h3>
+        <p>Professionally cultivate one-to-one find customer service with robust ideas.</p>
+        <a href="getting-help.md">Go to help page →</a>
+    </div>
+</div>
+
+<h2 class="homepage-section-title">Plugins</h2>
+<div class="homepage-cards">
+    <div class="homepage-card">
+        <img src="images/logo.png" alt="Plus Plugin" width="50" />
+        <h3>nopAccelerate Plus Plugin</h3>
+        <a href="plugins/nopaccelerate-plus/index.md">View Docs →</a>
+    </div>
+    <div class="homepage-card">
+        <img src="images/logo.png" alt="Plus Plugin" width="50" />
+        <h3>nopAccelerate Plus Plugin</h3>
+        <a href="plugins/nopaccelerate-plus/index.md">View Docs →</a>
+    </div>
+    <!-- Add more plugin cards here if needed -->
+</div>
+
+{% endblock %}
